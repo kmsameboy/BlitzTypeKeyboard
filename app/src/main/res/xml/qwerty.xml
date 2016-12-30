@@ -25,11 +25,11 @@
     android:keyHeight="@dimen/key_height">
 
     <Row>
-        <Key android:codes="113" android:keyLabel="q" android:keyEdgeFlags="left"/>
-        <Key android:codes="119" android:keyLabel="w"/>
-        <Key android:codes="101" android:keyLabel="e"/>
-        <Key android:codes="114" android:keyLabel="r"/>
-        <Key android:codes="116" android:keyLabel="t"/>
+        <Key android:codes="113" android:keyLabel="q" android:keyEdgeFlags="left" android:popupCharacters="1" android:popupKeyboard="@xml/keyboard_popup_template"/>
+        <Key android:codes="119" android:keyLabel="w" android:popupCharacters="2" android:popupKeyboard="@xml/keyboard_popup_template"/>
+        <Key android:codes="101" android:keyLabel="e" android:popupCharacters="3" android:popupKeyboard="@xml/keyboard_popup_template"/>
+        <Key android:codes="114" android:keyLabel="r" android:popupCharacters="4" android:popupKeyboard="@xml/keyboard_popup_template"/>
+        <Key android:codes="116" android:keyLabel="t" android:popupCharacters="5" android:popupKeyboard="@xml/keyboard_popup_template"/>
         <Key android:codes="121" android:keyLabel="y"/>
         <Key android:codes="117" android:keyLabel="u"/>
         <Key android:codes="105" android:keyLabel="i"/>
