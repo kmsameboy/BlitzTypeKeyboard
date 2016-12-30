@@ -524,7 +524,7 @@ public class SoftKeyboard extends InputMethodService
     // Implementation of KeyboardViewListener
 
     public void onKey(int primaryCode, int[] keyCodes) {
-        Log.d("Test","KEYCODE: " + primaryCode);
+        Log.d("Test","KEYCODEy: " + primaryCode);
         if (isWordSeparator(primaryCode)) {
             // Handle separator
             if (mComposing.length() > 0) {
@@ -640,20 +640,89 @@ public class SoftKeyboard extends InputMethodService
     }
     
     private void handleCharacter(int primaryCode, int[] keyCodes) {
-        if (isInputViewShown()) {
-            if (mInputView.isShifted()) {
-                primaryCode = Character.toUpperCase(primaryCode);
-            }
-        }
-        if (mPredictionOn) {
-            mComposing.append((char) primaryCode);
-            getCurrentInputConnection().setComposingText(mComposing, 1);
-            updateShiftKeyState(getCurrentInputEditorInfo());
-            updateCandidates();
-        } else {
-            getCurrentInputConnection().commitText(
-                    String.valueOf((char) primaryCode), 1);
-        }
+			Log.d("Test","KEYCODE 3: " + primaryCode);
+				char[] arr={};
+			switch(primaryCode){
+			
+				case 9999: char[] left={'l','e','f','t',' '};
+							getCurrentInputConnection().commitText(
+								String.valueOf(left), 1);
+						 break;
+				case 9998: char[] right={'r','i','g','h','t',' '};
+							getCurrentInputConnection().commitText(
+									String.valueOf(right), 1);
+						 break;
+				case 9997: char[] pls={'p','l','s',' '};
+							getCurrentInputConnection().commitText(
+									String.valueOf(pls), 1);
+						 break;
+				case 9996: char[] aall={'a','l','l',' '};
+							getCurrentInputConnection().commitText(
+								String.valueOf(aall), 1);
+						 break;
+				case 9995: char[] heavies={'h','e','a','v','i','e','s',' '};
+							getCurrentInputConnection().commitText(
+									String.valueOf(heavies), 1);
+						 break;
+				case 9994: char[] spot={'s','p','o','t',' '};
+							getCurrentInputConnection().commitText(
+									String.valueOf(spot), 1);
+						 break;
+				case 9993: char[] flank={'f','l','a','n','k',' '};
+							getCurrentInputConnection().commitText(
+								String.valueOf(flank), 1);
+						 break;
+				case 9992: char[] me={'m','e',' '};
+							getCurrentInputConnection().commitText(
+									String.valueOf(me), 1);
+						 break;
+				case 9991: char[] meds={'m','e','d','s',' '};
+							getCurrentInputConnection().commitText(
+									String.valueOf(meds), 1);
+						 break;
+				case 9990: char[] get={'g','e','t',' '};
+							getCurrentInputConnection().commitText(
+								String.valueOf(get), 1);
+						 break;
+				case 9989: char[] tds={'T','D','s',' '};
+							getCurrentInputConnection().commitText(
+									String.valueOf(tds), 1);
+						 break;
+				case 9988: char[] cover={'c','o','v','e','r',' '};
+							getCurrentInputConnection().commitText(
+									String.valueOf(cover), 1);
+						 break;
+				case 9987: char[] back={'b','a','c','k',' '};
+							getCurrentInputConnection().commitText(
+								String.valueOf(back), 1);
+						 break;
+				case 99876: char[] ppull={'p','u','l','l',' '};
+							getCurrentInputConnection().commitText(
+									String.valueOf(ppull), 1);
+						 break;
+				case 9985: char[] ppush={'p','u','s','h',' '};
+							getCurrentInputConnection().commitText(
+									String.valueOf(ppush), 1);
+						 break;
+				case 9984: char[] comming={'c','o','m','m','i','n','g',' '};
+							getCurrentInputConnection().commitText(
+									String.valueOf(comming), 1);
+						 break;
+				case 9983: char[] watch={'w','a','t','c','h',' '};
+							getCurrentInputConnection().commitText(
+								String.valueOf(watch), 1);
+						 break;
+				case 9982: char[] push={'p','u','s','h',' '};
+							getCurrentInputConnection().commitText(
+									String.valueOf(push), 1);
+						 break;
+				default: 
+						 
+		     getCurrentInputConnection().commitText(
+				String.valueOf((char) primaryCode), 1);
+			 break;
+
+			}
     }
 
     private void handleClose() {
