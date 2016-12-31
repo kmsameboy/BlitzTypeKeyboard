@@ -74,11 +74,10 @@
             privately defined in com.example.android.softkeyboard.LatinKeyboardView.
         -->
         <Key android:codes="32" android:keyIcon="@drawable/sym_keyboard_space" 
-                android:keyWidth="28%p" android:isRepeatable="true" android:horizontalGap="30%p"/>
+                android:keyWidth="26%p" android:isRepeatable="true" android:horizontalGap="30%p"/>
         <Key android:codes="-101" android:keyWidth="1%p"/>
-        <Key android:codes="46" android:keyLabel="."
-             android:popupCharacters=".,?!#@" android:popupKeyboard="@xml/keyboard_popup_template"/>
-        <Key android:codes="-2" android:keyLabel="BLITZ"/>
+        <Key android:codes="-2" android:keyLabel="BLITZ" android:horizontalGap="1%p"/>
+		<Key android:codes="9977" android:keyLabel="omg"/>
 		<Key android:codes="9981" android:keyLabel="&lt;&lt;"/>
 		<Key android:codes="9980" android:keyLabel="&gt;&gt;"/>
 		<Key android:codes="9979" android:keyLabel="gg"/>

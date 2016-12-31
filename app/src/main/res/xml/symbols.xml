@@ -42,7 +42,7 @@
     </Row>
     
     <Row>
-        <Key android:codes="9999" android:keyWidth="7%p"  android:keyLabel="left" android:horizontalGap="20%p"/>
+        <Key android:codes="9999" android:keyWidth="7%p"  android:keyLabel="left" android:horizontalGap="25%p"/>
         <Key android:codes="9998" android:keyWidth="7%p " android:keyLabel="right"/>
         <Key android:codes="9997" android:keyWidth="6%p " android:keyLabel="pls"/>
         <Key android:codes="9996" android:keyWidth="6%p " android:keyLabel="all"/>
@@ -57,11 +57,11 @@
     </Row>
     
     <Row>
-        <Key android:codes="9988" android:keyWidth="9%p " android:keyLabel="cover" android:horizontalGap="25%p"/>
+        <Key android:codes="9988" android:keyWidth="8%p " android:keyLabel="cover" android:horizontalGap="30%p"/>
         <Key android:codes="9987" android:keyWidth="7%p " android:keyLabel="back"/>
         <Key android:codes="9986" android:keyWidth="7%p " android:keyLabel="pull"/>
         <Key android:codes="9985" android:keyWidth="7%p " android:keyLabel="push"/>
-        <Key android:codes="9984" android:keyWidth="12%p " android:keyLabel="comming"/>
+        <Key android:codes="9984" android:keyWidth="11%p " android:keyLabel="comming"/>
         <Key android:codes="9983" android:keyWidth="9%p " android:keyLabel="watch"/>
         <Key android:codes="9982" android:keyWidth="8%p " android:keyLabel="fast"/>
 		<Key android:codes="9981" android:keyLabel="&lt;&lt;"/>
@@ -72,7 +72,7 @@
             android:codes: -101 is not a framework-defined key code but a key code that is
             privately defined in com.example.android.softkeyboard.LatinKeyboardView.
         -->
-        <Key android:codes="-2" android:keyLabel="ABC" android:keyWidth="10%p" android:horizontalGap="25%p"/>
+        <Key android:codes="-2" android:keyLabel="ABC" android:keyWidth="10%p" android:horizontalGap="30%p"/>
         <Key android:codes="-101" android:keyWidth="1%p" />
         <Key android:codes="33" android:keyLabel="!"/>
         <Key android:codes="63" android:keyLabel="\?"/>

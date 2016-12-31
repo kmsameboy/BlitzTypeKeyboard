@@ -732,6 +732,10 @@ public class SoftKeyboard extends InputMethodService
 							getCurrentInputConnection().commitText(
 									String.valueOf(lol), 1);
 						 break;
+				case 9977: char[] omg={'o','m','g',' ','®',' '};
+							getCurrentInputConnection().commitText(
+									String.valueOf(omg), 1);
+						 break;
 				default: 
 						 
 		     getCurrentInputConnection().commitText(
