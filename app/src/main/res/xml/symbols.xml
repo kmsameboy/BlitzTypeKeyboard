@@ -37,7 +37,7 @@
         <Key android:codes="57" android:keyLabel="9"/>
         <Key android:codes="48" android:keyLabel="0"/>
         <Key android:codes="-5" android:keyIcon="@drawable/sym_keyboard_delete"
-                android:keyWidth="15%p" android:keyEdgeFlags="right"
+                android:keyWidth="10%p" android:keyEdgeFlags="right"
                 android:isRepeatable="true"/>
     </Row>
     
@@ -50,9 +50,10 @@
         <Key android:codes="9993" android:keyWidth="9%p " android:keyLabel="flank"/>
         <Key android:codes="9992" android:keyWidth="6%p " android:keyLabel="me"/>
         <Key android:codes="9990" android:keyWidth="7%p " android:keyLabel="get"/>
+        <Key android:codes="9982" android:keyWidth="7%p " android:keyLabel="fast"/>
 
         <Key android:codes="10" android:keyIcon="@drawable/sym_keyboard_return"
-                android:keyWidth="20%p" android:keyEdgeFlags="right"
+                android:keyWidth="17%p" android:keyEdgeFlags="right"
                 />
     </Row>
     
@@ -63,7 +64,7 @@
         <Key android:codes="9985" android:keyWidth="7%p " android:keyLabel="push"/>
         <Key android:codes="9984" android:keyWidth="11%p " android:keyLabel="comming"/>
         <Key android:codes="9983" android:keyWidth="9%p " android:keyLabel="watch"/>
-        <Key android:codes="9982" android:keyWidth="8%p " android:keyLabel="fast"/>
+		<Key android:codes="174" android:keyIcon="@drawable/wot_logo"/>
 		<Key android:codes="9981" android:keyLabel="&lt;&lt;"/>
 		<Key android:codes="9980" android:keyLabel="&gt;&gt;"/>
     </Row>
@@ -72,12 +73,14 @@
             android:codes: -101 is not a framework-defined key code but a key code that is
             privately defined in com.example.android.softkeyboard.LatinKeyboardView.
         -->
-        <Key android:codes="-2" android:keyLabel="ABC" android:keyWidth="10%p" android:horizontalGap="30%p"/>
-        <Key android:codes="-101" android:keyWidth="1%p" />
-        <Key android:codes="33" android:keyLabel="!"/>
-        <Key android:codes="63" android:keyLabel="\?"/>
+        <Key android:codes="32" android:keyIcon="@drawable/sym_keyboard_space" 
+                android:keyWidth="21%p" android:isRepeatable="true" android:horizontalGap="30%p"/>
+        <Key android:codes="-101" android:keyWidth="1%p" android:horizontalGap="1%p"/>
         <Key android:codes="9991" android:keyWidth="7%p " android:keyLabel="meds"/>
         <Key android:codes="9995" android:keyWidth="12%p " android:keyLabel="heavies"/>
 		<Key android:codes="9989" android:keyWidth="7%p " android:keyLabel="tds"/>
+        <Key android:codes="33" android:keyLabel="!"/>
+        <Key android:codes="63" android:keyLabel="\?"/>
+        <Key android:codes="-2" android:keyIcon="@drawable/bt_logo" />
     </Row>
 </Keyboard>
