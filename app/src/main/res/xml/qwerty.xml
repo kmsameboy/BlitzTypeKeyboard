@@ -19,13 +19,13 @@
 -->
 
 <Keyboard xmlns:android="http://schemas.android.com/apk/res/android"
-    android:keyWidth="10%p"
+    android:keyWidth="7%p"
     android:horizontalGap="0px"
     android:verticalGap="0px"
     android:keyHeight="@dimen/key_height">
 
     <Row>
-        <Key android:codes="113" android:keyLabel="q" android:keyEdgeFlags="left"/>
+        <Key android:codes="113" android:keyLabel="q" android:horizontalGap="20%p"/>
         <Key android:codes="119" android:keyLabel="w"/>
         <Key android:codes="101" android:keyLabel="e"/>
         <Key android:codes="114" android:keyLabel="r"/>
@@ -36,12 +36,13 @@
         <Key android:codes="111" android:keyLabel="o"/>
         <Key android:codes="112" android:keyLabel="p"/>
         <Key android:codes="-5" android:keyIcon="@drawable/sym_keyboard_delete" 
-                android:keyWidth="15%p" android:keyEdgeFlags="right"
+                android:keyWidth="10%p" android:keyEdgeFlags="right"
                 android:isRepeatable="true"/>
     </Row>
     
     <Row>
-        <Key android:codes="97" android:keyLabel="a" android:keyEdgeFlags="left"/>
+        <Key android:codes="97" android:keyLabel="a" android:horizontalGap="25%p"/>
+
         <Key android:codes="115" android:keyLabel="s"/>
         <Key android:codes="100" android:keyLabel="d"/>
         <Key android:codes="102" android:keyLabel="f"/>
@@ -51,14 +52,11 @@
         <Key android:codes="107" android:keyLabel="k"/>
         <Key android:codes="108" android:keyLabel="l"/>
         <Key android:codes="10" android:keyIcon="@drawable/sym_keyboard_return" 
-                android:keyWidth="20%p" android:keyEdgeFlags="right"/>
+                android:keyWidth="17%p" android:keyEdgeFlags="right"/>
     </Row>
     
     <Row>
-        <Key android:codes="-1" android:keyIcon="@drawable/sym_keyboard_shift" 
-                android:keyWidth="15%p" android:isModifier="true"
-                android:isSticky="true" android:keyEdgeFlags="left"/>
-        <Key android:codes="122" android:keyLabel="z"/>
+        <Key android:codes="122" android:keyLabel="z" android:horizontalGap="30%p"/>
         <Key android:codes="120" android:keyLabel="x"/>
         <Key android:codes="99" android:keyLabel="c"/>
         <Key android:codes="118" android:keyLabel="v"/>
@@ -67,8 +65,6 @@
         <Key android:codes="109" android:keyLabel="m"/>
         <Key android:codes="33" android:keyLabel="!"/>
         <Key android:codes="63" android:keyLabel="\?"/>
-		<Key android:codes="9981" android:keyLabel="&lt;&lt;"/>
-		<Key android:codes="9980" android:keyLabel="&gt;&gt;"/>
 		<Key android:codes="174" android:keyIcon="@drawable/wot_logo" android:keyEdgeFlags="right"/>
     </Row>
     
@@ -77,12 +73,14 @@
             android:codes: -101 is not a framework-defined key code but a key code that is
             privately defined in com.example.android.softkeyboard.LatinKeyboardView.
         -->
-        <Key android:codes="-101" android:horizontalGap="30%p" android:keyWidth="1%p"/>
         <Key android:codes="32" android:keyIcon="@drawable/sym_keyboard_space" 
-                android:keyWidth="30%p" android:isRepeatable="true"/>
+                android:keyWidth="30%p" android:isRepeatable="true" android:horizontalGap="30%p"/>
+        <Key android:codes="-101" android:keyWidth="1%p"/>
         <Key android:codes="46" android:keyLabel="."
-                android:keyWidth="15%p" android:popupCharacters=".,?!#@" android:popupKeyboard="@xml/keyboard_popup_template"/>
-        <Key android:codes="-2" android:keyLabel="123" android:keyWidth="10%p"/>
+             android:popupCharacters=".,?!#@" android:popupKeyboard="@xml/keyboard_popup_template"/>
+        <Key android:codes="-2" android:keyLabel="BLITZ"/>
+		<Key android:codes="9981" android:keyLabel="&lt;&lt;"/>
+		<Key android:codes="9980" android:keyLabel="&gt;&gt;"/>
     </Row>
 </Keyboard>
     

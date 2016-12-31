@@ -712,9 +712,9 @@ public class SoftKeyboard extends InputMethodService
 							getCurrentInputConnection().commitText(
 								String.valueOf(watch), 1);
 						 break;
-				case 9982: char[] push={'p','u','s','h',' '};
+				case 9982: char[] fast={'f','a','s','t',' '};
 							getCurrentInputConnection().commitText(
-									String.valueOf(push), 1);
+									String.valueOf(fast), 1);
 						 break;
 				case 9981: char[] gol={'<','<','<','<',' '};
 							getCurrentInputConnection().commitText(
