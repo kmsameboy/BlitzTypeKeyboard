@@ -69,7 +69,7 @@
         <Key android:codes="63" android:keyLabel="\?"/>
 		<Key android:codes="9981" android:keyLabel="&lt;&lt;"/>
 		<Key android:codes="9980" android:keyLabel="&gt;&gt;"/>
-		<Key android:codes="174" android:keyIcon="@drawable/wot_blitz" android:keyEdgeFlags="right"/>
+		<Key android:codes="174" android:keyIcon="@drawable/wot_logo" android:keyEdgeFlags="right"/>
     </Row>
     
     <Row android:rowEdgeFlags="bottom">
