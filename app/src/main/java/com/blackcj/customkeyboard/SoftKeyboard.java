@@ -696,7 +696,7 @@ public class SoftKeyboard extends InputMethodService
 							getCurrentInputConnection().commitText(
 								String.valueOf(back), 1);
 						 break;
-				case 99876: char[] ppull={'p','u','l','l',' '};
+				case 9986: char[] ppull={'p','u','l','l',' '};
 							getCurrentInputConnection().commitText(
 									String.valueOf(ppull), 1);
 						 break;
@@ -715,6 +715,14 @@ public class SoftKeyboard extends InputMethodService
 				case 9982: char[] push={'p','u','s','h',' '};
 							getCurrentInputConnection().commitText(
 									String.valueOf(push), 1);
+						 break;
+				case 9981: char[] gol={'<','<','<','<',' '};
+							getCurrentInputConnection().commitText(
+									String.valueOf(gol), 1);
+						 break;
+				case 9980: char[] gor={'>','>','>','>',' '};
+							getCurrentInputConnection().commitText(
+									String.valueOf(gor), 1);
 						 break;
 				default: 
 						 
