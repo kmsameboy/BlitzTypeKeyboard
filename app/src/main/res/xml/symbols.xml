@@ -42,7 +42,7 @@
     </Row>
     
     <Row>
-        <Key android:codes="9999" android:keyWidth="7%p"  android:horizontalGap="20%p"/>
+        <Key android:codes="9999" android:keyWidth="7%p"  android:keyLabel="left" android:horizontalGap="20%p"/>
         <Key android:codes="9998" android:keyWidth="7%p " android:keyLabel="right"/>
         <Key android:codes="9997" android:keyWidth="6%p " android:keyLabel="pls"/>
         <Key android:codes="9996" android:keyWidth="6%p " android:keyLabel="all"/>
@@ -64,6 +64,8 @@
         <Key android:codes="9984" android:keyWidth="12%p " android:keyLabel="comming"/>
         <Key android:codes="9983" android:keyWidth="9%p " android:keyLabel="watch"/>
         <Key android:codes="9982" android:keyWidth="8%p " android:keyLabel="fast"/>
+		<Key android:codes="9981" android:keyLabel="&lt;&lt;"/>
+		<Key android:codes="9980" android:keyLabel="&gt;&gt;"/>
     </Row>
     
     <Row  android:rowEdgeFlags="bottom">
