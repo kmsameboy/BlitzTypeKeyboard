@@ -1,11 +1,16 @@
 # BlitzType
 
-Android custom keyboard with special keys for the WOT Blitz game. To build, just run gradle.
+Android custom keyboard with special keys for the WOT Blitz game. QWERTZ layout. No shift (lowercase only). Custom buttons for most common commands.
+
+
+##Building
+
+To build, just run gradle.
 
 ##Binary releases (download):
 https://github.com/vanous/BlitzTypeKeyboard/releases
 
 ##Obligatory screenshots:
 
-![Screenshot](Screenshot_2016-12-31-13-56-56.png)
-![Screenshot](Screenshot_2016-12-31-13-57-06.png)
+![Screenshot](Screenshot_2017-01-01-00-24-15.png)
+![Screenshot](Screenshot_2017-01-01-00-24-51.png)
