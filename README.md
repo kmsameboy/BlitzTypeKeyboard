@@ -9,7 +9,7 @@ Android custom keyboard with special keys for the WOT Blitz game. QWERTZ layout.
 
 To build, just run gradle.
 
-##Binary releases (download):
+##Binary releases (apk download):
 https://github.com/vanous/BlitzTypeKeyboard/releases
 
 ##Obligatory screenshots:
