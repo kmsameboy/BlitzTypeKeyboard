@@ -58,12 +58,13 @@
     </Row>
     
     <Row>
-        <Key android:codes="9988" android:keyWidth="8%p " android:keyLabel="cover" android:horizontalGap="30%p"/>
+        <Key android:codes="9988" android:keyWidth="6%p " android:keyLabel="cover" android:horizontalGap="30%p"/>
         <Key android:codes="9987" android:keyWidth="7%p " android:keyLabel="back"/>
         <Key android:codes="9986" android:keyWidth="7%p " android:keyLabel="pull"/>
         <Key android:codes="9985" android:keyWidth="7%p " android:keyLabel="push"/>
-        <Key android:codes="9984" android:keyWidth="11%p " android:keyLabel="comming"/>
-        <Key android:codes="9983" android:keyWidth="9%p " android:keyLabel="watch"/>
+        <Key android:codes="9984" android:keyWidth="9%p " android:keyLabel="coming"/>
+        <Key android:codes="9976" android:keyWidth="5%p " android:keyLabel="up"/>
+        <Key android:codes="9983" android:keyWidth="8%p " android:keyLabel="watch"/>
 		<Key android:codes="174" android:keyIcon="@drawable/wot_logo"/>
 		<Key android:codes="9981" android:keyLabel="&lt;&lt;"/>
 		<Key android:codes="9980" android:keyLabel="&gt;&gt;"/>

@@ -704,9 +704,9 @@ public class SoftKeyboard extends InputMethodService
 							getCurrentInputConnection().commitText(
 									String.valueOf(ppush), 1);
 						 break;
-				case 9984: char[] comming={'c','o','m','m','i','n','g',' '};
+				case 9984: char[] coming={'c','o','m','i','n','g',' '};
 							getCurrentInputConnection().commitText(
-									String.valueOf(comming), 1);
+									String.valueOf(coming), 1);
 						 break;
 				case 9983: char[] watch={'w','a','t','c','h',' '};
 							getCurrentInputConnection().commitText(
@@ -735,6 +735,14 @@ public class SoftKeyboard extends InputMethodService
 				case 9977: char[] omg={'o','m','g',' ','®',' '};
 							getCurrentInputConnection().commitText(
 									String.valueOf(omg), 1);
+						 break;
+				case 9976: char[] uup={'u','p',' '};
+							getCurrentInputConnection().commitText(
+									String.valueOf(uup), 1);
+						 break;
+				case 9975: char[] spotted={'S','p','o','t','t','e','d',',',' ','h','e','l','p',' ','p','l','s','!'};
+							getCurrentInputConnection().commitText(
+									String.valueOf(spotted), 1);
 						 break;
 				default: 
 						 
