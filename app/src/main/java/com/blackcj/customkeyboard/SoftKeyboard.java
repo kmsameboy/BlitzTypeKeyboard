@@ -644,113 +644,66 @@ public class SoftKeyboard extends InputMethodService
 				char[] arr={};
 			switch(primaryCode){
 			
-				case 9999: char[] left={'l','e','f','t',' '};
-							getCurrentInputConnection().commitText(
-								String.valueOf(left), 1);
+				case 9999: arr = new char[] {'l','e','f','t',' '};
 						 break;
-				case 9998: char[] right={'r','i','g','h','t',' '};
-							getCurrentInputConnection().commitText(
-									String.valueOf(right), 1);
+				case 9998: arr = new char[] {'r','i','g','h','t',' '};
 						 break;
-				case 9997: char[] pls={'p','l','s',' '};
-							getCurrentInputConnection().commitText(
-									String.valueOf(pls), 1);
+				case 9997: arr = new char[] {'p','l','s',' '};
 						 break;
-				case 9996: char[] aall={'a','l','l',' '};
-							getCurrentInputConnection().commitText(
-								String.valueOf(aall), 1);
+				case 9996: arr = new char[] {'a','l','l',' '};
 						 break;
-				case 9995: char[] heavies={'h','e','a','v','i','e','s',' '};
-							getCurrentInputConnection().commitText(
-									String.valueOf(heavies), 1);
+				case 9995: arr = new char[] {'h','e','a','v','i','e','s',' '};
 						 break;
-				case 9994: char[] spot={'s','p','o','t',' '};
-							getCurrentInputConnection().commitText(
-									String.valueOf(spot), 1);
+				case 9994: arr = new char[] {'s','p','o','t',' '};
 						 break;
-				case 9993: char[] flank={'f','l','a','n','k',' '};
-							getCurrentInputConnection().commitText(
-								String.valueOf(flank), 1);
+				case 9993: arr = new char[] {'f','l','a','n','k',' '};
 						 break;
-				case 9992: char[] me={'m','e',' '};
-							getCurrentInputConnection().commitText(
-									String.valueOf(me), 1);
+				case 9992: arr = new char[] {'m','e',' '};
 						 break;
-				case 9991: char[] meds={'m','e','d','s',' '};
-							getCurrentInputConnection().commitText(
-									String.valueOf(meds), 1);
+				case 9991: arr = new char[] {'m','e','d','s',' '};
 						 break;
-				case 9990: char[] get={'g','e','t',' '};
-							getCurrentInputConnection().commitText(
-								String.valueOf(get), 1);
+				case 9990: arr = new char[] {'g','e','t',' '};
 						 break;
-				case 9989: char[] tds={'T','D','s',' '};
-							getCurrentInputConnection().commitText(
-									String.valueOf(tds), 1);
+				case 9989: arr = new char[] {'T','D','s',' '};
 						 break;
-				case 9988: char[] cover={'c','o','v','e','r',' '};
-							getCurrentInputConnection().commitText(
-									String.valueOf(cover), 1);
+				case 9988: arr = new char[] {'c','o','v','e','r',' '};
 						 break;
-				case 9987: char[] back={'b','a','c','k',' '};
-							getCurrentInputConnection().commitText(
-								String.valueOf(back), 1);
+				case 9987: arr = new char[] {'b','a','c','k',' '};
 						 break;
-				case 9986: char[] ppull={'p','u','l','l',' '};
-							getCurrentInputConnection().commitText(
-									String.valueOf(ppull), 1);
+				case 9986: arr = new char[] {'p','u','l','l',' '};
 						 break;
-				case 9985: char[] ppush={'p','u','s','h',' '};
-							getCurrentInputConnection().commitText(
-									String.valueOf(ppush), 1);
+				case 9985: arr = new char[] {'p','u','s','h',' '};
 						 break;
-				case 9984: char[] coming={'c','o','m','i','n','g',' '};
-							getCurrentInputConnection().commitText(
-									String.valueOf(coming), 1);
+				case 9984: arr = new char[] {'c','o','m','i','n','g',' '};
 						 break;
-				case 9983: char[] watch={'w','a','t','c','h',' '};
-							getCurrentInputConnection().commitText(
-								String.valueOf(watch), 1);
+				case 9983: arr = new char[] {'w','a','t','c','h',' '};
 						 break;
-				case 9982: char[] fast={'f','a','s','t',' '};
-							getCurrentInputConnection().commitText(
-									String.valueOf(fast), 1);
+				case 9982: arr = new char[] {'f','a','s','t',' '};
 						 break;
-				case 9981: char[] gol={'<','<','<','<',' '};
-							getCurrentInputConnection().commitText(
-									String.valueOf(gol), 1);
+				case 9981: arr = new char[] {'<','<','<','<',' '};
 						 break;
-				case 9980: char[] gor={'>','>','>','>',' '};
-							getCurrentInputConnection().commitText(
-									String.valueOf(gor), 1);
+				case 9980: arr = new char[] {'>','>','>','>',' '};
 						 break;
-				case 9979: char[] gg={'G','o','o','d',' ','G','a','m','e',' ','®',' '};
-							getCurrentInputConnection().commitText(
-									String.valueOf(gg), 1);
+				case 9979: arr = new char[] {'G','o','o','d',' ','G','a','m','e',' ','®',' '};
 						 break;
-				case 9978: char[] lol={'l','o','l',' ','®',' '};
-							getCurrentInputConnection().commitText(
-									String.valueOf(lol), 1);
+				case 9978: arr = new char[] {'l','o','l',' ','®',' '};
 						 break;
-				case 9977: char[] omg={'o','m','g',' ','®',' '};
-							getCurrentInputConnection().commitText(
-									String.valueOf(omg), 1);
+				case 9977: arr = new char[] {'o','m','g',' ','®',' '};
 						 break;
-				case 9976: char[] uup={'u','p',' '};
-							getCurrentInputConnection().commitText(
-									String.valueOf(uup), 1);
+				case 9976: arr = new char[] {'u','p',' '};
 						 break;
-				case 9975: char[] spotted={'S','p','o','t','t','e','d',',',' ','h','e','l','p',' ','p','l','s','!'};
-							getCurrentInputConnection().commitText(
-									String.valueOf(spotted), 1);
+				case 9975: arr = new char[] {'S','p','o','t','t','e','d',',',' ','h','e','l','p',' ','p','l','s','!'};
 						 break;
 				default: 
+
+						   arr=new char[]{' '};
+						   arr[0]=(char)primaryCode;
 						 
-		     getCurrentInputConnection().commitText(
-				String.valueOf((char) primaryCode), 1);
 			 break;
 
 			}
+		     getCurrentInputConnection().commitText(
+				String.valueOf(arr), 1);
     }
 
     private void handleClose() {
