@@ -1,0 +1,459 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:osb="http://www.openswatchbook.org/uri/2009/osb"
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="210mm"
+   height="297mm"
+   viewBox="0 0 744.09448819 1052.3622047"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.91 r13725"
+   sodipodi:docname="icons.svg">
+  <defs
+     id="defs4">
+    <linearGradient
+       id="linearGradient4363"
+       osb:paint="solid">
+      <stop
+         style="stop-color:#000000;stop-opacity:1;"
+         offset="0"
+         id="stop4365" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient4353"
+       osb:paint="gradient">
+      <stop
+         style="stop-color:#a2b9ea;stop-opacity:1;"
+         offset="0"
+         id="stop4355" />
+      <stop
+         style="stop-color:#a2b9ea;stop-opacity:0;"
+         offset="1"
+         id="stop4357" />
+    </linearGradient>
+    <linearGradient
+       id="linearGradient4165"
+       osb:paint="solid">
+      <stop
+         style="stop-color:#9ba0aa;stop-opacity:0.60000002;"
+         offset="0"
+         id="stop4167" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient4165"
+       id="linearGradient4367"
+       x1="-34.345188"
+       y1="86.151299"
+       x2="276.7818"
+       y2="86.151299"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(0.25712974,0,0,0.59699243,94.090079,78.158737)" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient4165"
+       id="linearGradient4367-3"
+       x1="-34.345188"
+       y1="86.151299"
+       x2="276.7818"
+       y2="86.151299"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(0.25712974,0,0,0.59699243,94.090076,191.79834)" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient4165"
+       id="linearGradient4367-5"
+       x1="-34.345188"
+       y1="86.151299"
+       x2="276.7818"
+       y2="86.151299"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(0.25712974,0,0,0.59699243,94.09008,304.93543)" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient4165"
+       id="linearGradient4367-2"
+       x1="-34.345188"
+       y1="86.151299"
+       x2="276.7818"
+       y2="86.151299"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(0.25712974,0,0,0.59699243,94.09008,415.97099)" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient4165"
+       id="linearGradient4367-0"
+       x1="-34.345188"
+       y1="86.151299"
+       x2="276.7818"
+       y2="86.151299"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(0.2507015,0,0,0.6045493,94.869298,529.54841)" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient4165"
+       id="linearGradient4367-7"
+       x1="-34.345188"
+       y1="86.151299"
+       x2="276.7818"
+       y2="86.151299"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(0.25712974,0,0,0.59699243,94.090083,639.29592)" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient4165"
+       id="linearGradient4367-59"
+       x1="-34.345188"
+       y1="86.151299"
+       x2="276.7818"
+       y2="86.151299"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(0.38310049,0,0,0.75568662,380.85576,57.918482)" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient4165"
+       id="linearGradient4367-1"
+       x1="-34.345188"
+       y1="86.151299"
+       x2="276.7818"
+       y2="86.151299"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(0.54219141,0,0,0.75568662,361.57099,172.06572)" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient4165"
+       id="linearGradient4367-4"
+       x1="-34.345188"
+       y1="86.151299"
+       x2="276.7818"
+       y2="86.151299"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(0.32141218,0,0,0.75568662,388.33349,283.1825)" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient4165"
+       id="linearGradient4367-03"
+       x1="-34.345188"
+       y1="86.151299"
+       x2="276.7818"
+       y2="86.151299"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(0.81167193,0,0,0.75568662,405.17156,406.42111)" />
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.7"
+     inkscape:cx="84.676703"
+     inkscape:cy="724.93233"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:window-width="1920"
+     inkscape:window-height="1016"
+     inkscape:window-x="0"
+     inkscape:window-y="27"
+     inkscape:window-maximized="1"
+     showguides="true"
+     inkscape:guide-bbox="true">
+    <sodipodi:guide
+       position="547.75522,587.15118"
+       orientation="0,1"
+       id="guide4515" />
+    <sodipodi:guide
+       position="404.28572,311.42858"
+       orientation="1,0"
+       id="guide4517" />
+    <sodipodi:guide
+       position="597.00016,587.15118"
+       orientation="1,0"
+       id="guide4519" />
+    <sodipodi:guide
+       position="535.63339,543.20954"
+       orientation="0,1"
+       id="guide4521" />
+  </sodipodi:namedview>
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <rect
+       style="fill:url(#linearGradient4367);fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:9.89999962;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:0;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="rect4361"
+       width="80"
+       height="79"
+       x="85.258911"
+       y="90.090408"
+       inkscape:export-filename="/home/vanous/bin/projects/android/BlitzTypeKeyboard/app/src/main/res/drawable-hdpi/omg.png"
+       inkscape:export-xdpi="109.94"
+       inkscape:export-ydpi="109.94" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:23.69810104px;line-height:124.00000095%;font-family:Sans;-inkscape-font-specification:'Sans, Normal';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="100.96376"
+       y="133.86986"
+       id="text4369"
+       sodipodi:linespacing="124%"
+       inkscape:export-filename="/home/vanous/bin/projects/android/BlitzTypeKeyboard/app/src/main/res/drawable-hdpi/omg.png"
+       inkscape:export-xdpi="109.94"
+       inkscape:export-ydpi="109.94"
+       transform="scale(0.98742088,1.0127394)"><tspan
+         sodipodi:role="line"
+         id="tspan4371"
+         x="100.96376"
+         y="133.86986"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:23.69810104px;line-height:124.00000095%;font-family:Sans;-inkscape-font-specification:'Sans, Normal';text-align:start;writing-mode:lr-tb;text-anchor:start">omg</tspan></text>
+    <rect
+       style="fill:url(#linearGradient4367-3);fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:9.89999962;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:0;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="rect4361-7"
+       width="80"
+       height="79"
+       x="85.258911"
+       y="203.73001"
+       inkscape:export-filename="/home/vanous/bin/projects/android/BlitzTypeKeyboard/app/src/main/res/drawable-hdpi/gg.png"
+       inkscape:export-xdpi="109.94"
+       inkscape:export-ydpi="109.94" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:23.69810104px;line-height:124.00000095%;font-family:Sans;-inkscape-font-specification:'Sans, Normal';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="112.23425"
+       y="246.07997"
+       id="text4369-5"
+       sodipodi:linespacing="124%"
+       inkscape:export-filename="/home/vanous/bin/projects/android/BlitzTypeKeyboard/app/src/main/res/drawable-hdpi/gg.png"
+       inkscape:export-xdpi="109.94"
+       inkscape:export-ydpi="109.94"
+       transform="scale(0.98742088,1.0127394)"><tspan
+         sodipodi:role="line"
+         id="tspan4371-3"
+         x="112.23425"
+         y="246.07997">gg</tspan></text>
+    <rect
+       style="fill:url(#linearGradient4367-5);fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:9.89999962;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:0;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="rect4361-2"
+       width="80"
+       height="79"
+       x="85.258911"
+       y="316.8671"
+       inkscape:export-filename="/home/vanous/bin/projects/android/BlitzTypeKeyboard/app/src/main/res/drawable-hdpi/lol.png"
+       inkscape:export-xdpi="109.94"
+       inkscape:export-ydpi="109.94" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:23.69810104px;line-height:124.00000095%;font-family:Sans;-inkscape-font-specification:'Sans, Normal';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="113.02688"
+       y="356.62808"
+       id="text4369-9"
+       sodipodi:linespacing="124%"
+       inkscape:export-filename="/home/vanous/bin/projects/android/BlitzTypeKeyboard/app/src/main/res/drawable-hdpi/lol.png"
+       inkscape:export-xdpi="109.94"
+       inkscape:export-ydpi="109.94"
+       transform="scale(0.98742088,1.0127394)"><tspan
+         sodipodi:role="line"
+         id="tspan4371-1"
+         x="113.02688"
+         y="356.62808">lol</tspan></text>
+    <rect
+       style="fill:url(#linearGradient4367-2);fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:9.89999962;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:0;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="rect4361-0"
+       width="80"
+       height="79"
+       x="85.258911"
+       y="427.90268"
+       inkscape:export-filename="/home/vanous/bin/projects/android/BlitzTypeKeyboard/app/src/main/res/drawable-hdpi/sos.png"
+       inkscape:export-xdpi="109.94"
+       inkscape:export-ydpi="109.94" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:23.69810104px;line-height:124.00000095%;font-family:Sans;-inkscape-font-specification:'Sans, Normal';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="107.19493"
+       y="466.85852"
+       id="text4369-93"
+       sodipodi:linespacing="124%"
+       inkscape:export-filename="/home/vanous/bin/projects/android/BlitzTypeKeyboard/app/src/main/res/drawable-hdpi/sos.png"
+       inkscape:export-xdpi="109.94"
+       inkscape:export-ydpi="109.94"
+       transform="scale(0.98742088,1.0127394)"><tspan
+         sodipodi:role="line"
+         id="tspan4371-6"
+         x="107.19493"
+         y="466.85852">sos</tspan></text>
+    <rect
+       style="fill:url(#linearGradient4367-0);fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:9.89999962;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:0;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="rect4361-26"
+       width="78"
+       height="80"
+       x="86.258911"
+       y="541.6311"
+       inkscape:export-filename="/home/vanous/bin/projects/android/BlitzTypeKeyboard/app/src/main/res/drawable-hdpi/excl.png"
+       inkscape:export-xdpi="109.94"
+       inkscape:export-ydpi="109.94" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:31.59746742px;line-height:124.00000095%;font-family:Sans;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="120.52126"
+       y="585.83203"
+       id="text4369-1"
+       sodipodi:linespacing="124%"
+       inkscape:export-filename="/home/vanous/bin/projects/android/BlitzTypeKeyboard/app/src/main/res/drawable-hdpi/excl.png"
+       inkscape:export-xdpi="109.94"
+       inkscape:export-ydpi="109.94"
+       transform="scale(0.98742086,1.0127394)"><tspan
+         sodipodi:role="line"
+         id="tspan4371-8"
+         x="120.52126"
+         y="585.83203">!</tspan></text>
+    <rect
+       style="fill:url(#linearGradient4367-7);fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:9.89999962;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:0;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="rect4361-20"
+       width="80"
+       height="79"
+       x="85.258911"
+       y="651.2276"
+       inkscape:export-filename="/home/vanous/bin/projects/android/BlitzTypeKeyboard/app/src/main/res/drawable-hdpi/quest.png"
+       inkscape:export-xdpi="109.94"
+       inkscape:export-ydpi="109.94" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:31.59746742px;line-height:124.00000095%;font-family:Sans;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="118.43842"
+       y="693.76447"
+       id="text4369-2"
+       sodipodi:linespacing="124%"
+       inkscape:export-filename="/home/vanous/bin/projects/android/BlitzTypeKeyboard/app/src/main/res/drawable-hdpi/quest.png"
+       inkscape:export-xdpi="109.94"
+       inkscape:export-ydpi="109.94"
+       transform="scale(0.98742086,1.0127394)"><tspan
+         sodipodi:role="line"
+         id="tspan4371-37"
+         x="118.43842"
+         y="693.76447">?</tspan></text>
+    <rect
+       style="fill:url(#linearGradient4367-59);fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:9.89999962;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:0;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="rect4361-28"
+       width="119.1929"
+       height="100"
+       x="367.69806"
+       y="73.021866"
+       inkscape:export-filename="/home/vanous/bin/projects/android/BlitzTypeKeyboard/app/src/main/res/drawable-hdpi/meds.png"
+       inkscape:export-xdpi="109.94"
+       inkscape:export-ydpi="109.94" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:30px;line-height:124.00000095%;font-family:Sans;-inkscape-font-specification:'Sans, Normal';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="385.48056"
+       y="130.06288"
+       id="text4369-97"
+       sodipodi:linespacing="124%"
+       inkscape:export-filename="/home/vanous/bin/projects/android/BlitzTypeKeyboard/app/src/main/res/drawable-hdpi/meds.png"
+       inkscape:export-xdpi="109.94"
+       inkscape:export-ydpi="109.94"><tspan
+         sodipodi:role="line"
+         id="tspan4371-36"
+         x="385.48056"
+         y="130.06288">meds</tspan></text>
+    <rect
+       style="fill:url(#linearGradient4367-1);fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:9.89999962;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:0;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="rect4361-9"
+       width="168.69037"
+       height="100"
+       x="342.94934"
+       y="187.1691"
+       inkscape:export-filename="/home/vanous/bin/projects/android/BlitzTypeKeyboard/app/src/main/res/drawable-hdpi/heavies.png"
+       inkscape:export-xdpi="109.94"
+       inkscape:export-ydpi="109.94" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:30px;line-height:124.00000095%;font-family:Sans;-inkscape-font-specification:'Sans, Normal';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="368.63486"
+       y="244.21011"
+       id="text4369-3"
+       sodipodi:linespacing="124%"
+       inkscape:export-filename="/home/vanous/bin/projects/android/BlitzTypeKeyboard/app/src/main/res/drawable-hdpi/heavies.png"
+       inkscape:export-xdpi="109.94"
+       inkscape:export-ydpi="109.94"><tspan
+         sodipodi:role="line"
+         id="tspan4371-19"
+         x="368.63486"
+         y="244.21011">heavies</tspan></text>
+    <rect
+       style="fill:url(#linearGradient4367-4);fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:9.89999962;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:0;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="rect4361-8"
+       width="100"
+       height="100"
+       x="377.29453"
+       y="298.28589"
+       inkscape:export-filename="/home/vanous/bin/projects/android/BlitzTypeKeyboard/app/src/main/res/drawable-hdpi/tds.png"
+       inkscape:export-xdpi="109.94"
+       inkscape:export-ydpi="109.94" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:30px;line-height:124.00000095%;font-family:Sans;-inkscape-font-specification:'Sans, Normal';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="404.39902"
+       y="355.3269"
+       id="text4369-4"
+       sodipodi:linespacing="124%"
+       inkscape:export-filename="/home/vanous/bin/projects/android/BlitzTypeKeyboard/app/src/main/res/drawable-hdpi/tds.png"
+       inkscape:export-xdpi="109.94"
+       inkscape:export-ydpi="109.94"><tspan
+         sodipodi:role="line"
+         id="tspan4371-5"
+         x="404.39902"
+         y="355.3269">tds</tspan></text>
+    <rect
+       style="fill:url(#linearGradient4367-03);fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:9.89999962;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:0;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="rect4361-1"
+       width="252.53304"
+       height="100"
+       x="377.29453"
+       y="421.52448"
+       inkscape:export-filename="/home/vanous/bin/projects/android/BlitzTypeKeyboard/app/src/main/res/drawable-hdpi/space.png"
+       inkscape:export-xdpi="109.94"
+       inkscape:export-ydpi="109.94" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:7;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none"
+       d="m 404.07635,457.59339 0.14794,43.55649 198.77814,-0.046 0.0433,-43.70442"
+       id="path4513"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cccc"
+       inkscape:export-filename="/home/vanous/bin/projects/android/BlitzTypeKeyboard/app/src/main/res/drawable-hdpi/space.png"
+       inkscape:export-xdpi="109.94"
+       inkscape:export-ydpi="109.94" />
+    <flowRoot
+       xml:space="preserve"
+       id="flowRoot4523"
+       style="fill:black;stroke:none;stroke-opacity:1;stroke-width:1px;stroke-linejoin:miter;stroke-linecap:butt;fill-opacity:1;font-family:Sans;font-style:normal;font-weight:normal;font-size:40px;line-height:124.00000095%;letter-spacing:0px;word-spacing:0px"><flowRegion
+         id="flowRegion4525"><rect
+           id="rect4527"
+           width="354.28571"
+           height="459.64761"
+           x="-61.42857"
+           y="49.505062" /></flowRegion><flowPara
+         id="flowPara4529"></flowPara></flowRoot>  </g>
+</svg>
