@@ -28,17 +28,24 @@ import android.util.Log;
 import android.view.inputmethod.InputMethodSubtype;
 import android.graphics.drawable.Drawable;
 import java.util.List;
-//import java.util.Arrays; //unused atm
+import android.graphics.Typeface;
+//import android.graphics.Rect;
 
 public class LatinKeyboardView extends KeyboardView {
 
     static final int KEYCODE_OPTIONS = -100;
     // TODO: Move this into android.inputmethodservice.Keyboard
     static final int KEYCODE_LANGUAGE_SWITCH = -101;
+	private Drawable mCustomImageSpace;
+	private Drawable mCustomImageLogo;
+	private Drawable dr;
 
     public LatinKeyboardView(Context context, AttributeSet attrs) {
         super(context, attrs);
-    }
+		mCustomImageSpace = context.getResources().getDrawable(R.drawable.sym_keyboard_space);
+		mCustomImageLogo = context.getResources().getDrawable(R.drawable.bt_logo);
+		dr = context.getResources().getDrawable(R.drawable.bottom);
+					    }
 
     public LatinKeyboardView(Context context, AttributeSet attrs, int defStyle) {
         super(context, attrs, defStyle);
@@ -65,20 +72,44 @@ public class LatinKeyboardView extends KeyboardView {
     }
 @Override
 public void onDraw(Canvas canvas) {
-    super.onDraw(canvas);
+	super.onDraw(canvas);
+	Paint paint = new Paint();
+	paint.setTextAlign(Paint.Align.CENTER);
+	//paint.setTypeface(Typeface.DEFAULT_BOLD);
+	paint.setTypeface(Typeface.create(Typeface.DEFAULT, Typeface.BOLD));
+	paint.setTextSize(22);
+	paint.setColor(Color.WHITE);
 
-    List<Key> keys = getKeyboard().getKeys();
-	//int[] arr ={32,9991,9995,33,63,9977,9979,9978,9975}; //unused atm
-    for (Key key : keys) {            
-    //Log.e("KEY", "Drawing key with code " + key.codes[0]);
-        //if (Arrays.asList(arr).contains((int)key.codes[0])) {
-        if (key.codes[0] == 32) {
-            Drawable dr = (Drawable) getResources().getDrawable(R.drawable.bottom);
-            dr.setBounds(key.x, key.y, key.x + key.width, key.y + key.height);
-            dr.draw(canvas);
+	List<Key> keys = getKeyboard().getKeys();
+	int[] arr ={32,9991,9995,33,63,9977,9979,9978,9975,9989,-2}; //unused atm
+	for (Key key : keys) {            
+		//Log.e("KEY", "Drawing key with code " + key.codes[0]);
+		//if (Arrays.asList(arr).contains((int)key.codes[0])) {
+		for (int ar: arr){
+			if (key.codes[0] == ar) {
 
-        }            
-    }
-}
+				dr.setBounds(key.x, key.y, key.x + key.width, key.y + key.height);
+				dr.draw(canvas);
+				if(key.label != null){
+					canvas.drawText(key.label.toString(), key.x + (key.width/2), key.y + (key.height/2)+11, paint);
+				}else{
+				switch(key.codes[0]){
+				case 32:
+					mCustomImageSpace.setBounds(key.x+5, key.y, key.x + key.height, key.y + key.height);
+					mCustomImageSpace.draw(canvas);
+					break;
+				case -2:
+				//	canvas.drawText("|________|", key.x + (key.width/2), key.y + (key.height/2)+11, paint);
+
+					mCustomImageLogo.setBounds(key.x, key.y, key.x + key.width, key.y + key.height);
+					mCustomImageLogo.draw(canvas);
+					break;
+					}
+				}
+
+			}            
+		}
+		}
+	}
 
 }
