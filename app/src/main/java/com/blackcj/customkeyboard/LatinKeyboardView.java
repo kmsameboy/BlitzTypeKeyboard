@@ -26,8 +26,9 @@ import android.inputmethodservice.KeyboardView;
 import android.util.AttributeSet;
 import android.util.Log;
 import android.view.inputmethod.InputMethodSubtype;
-
+import android.graphics.drawable.Drawable;
 import java.util.List;
+//import java.util.Arrays; //unused atm
 
 public class LatinKeyboardView extends KeyboardView {
 
@@ -62,5 +63,22 @@ public class LatinKeyboardView extends KeyboardView {
         //keyboard.setSpaceIcon(getResources().getDrawable(subtype.getIconResId()));
         invalidateAllKeys();
     }
+@Override
+public void onDraw(Canvas canvas) {
+    super.onDraw(canvas);
+
+    List<Key> keys = getKeyboard().getKeys();
+	//int[] arr ={32,9991,9995,33,63,9977,9979,9978,9975}; //unused atm
+    for (Key key : keys) {            
+    //Log.e("KEY", "Drawing key with code " + key.codes[0]);
+        //if (Arrays.asList(arr).contains((int)key.codes[0])) {
+        if (key.codes[0] == 32) {
+            Drawable dr = (Drawable) getResources().getDrawable(R.drawable.bottom);
+            dr.setBounds(key.x, key.y, key.x + key.width, key.y + key.height);
+            dr.draw(canvas);
+
+        }            
+    }
+}
 
 }
