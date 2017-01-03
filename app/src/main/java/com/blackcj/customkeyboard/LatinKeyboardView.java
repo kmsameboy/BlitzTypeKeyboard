@@ -36,8 +36,12 @@ public class LatinKeyboardView extends KeyboardView {
     // TODO: Move this into android.inputmethodservice.Keyboard
     static final int KEYCODE_LANGUAGE_SWITCH = -101;
 
+	private Drawable dr;
+
+
     public LatinKeyboardView(Context context, AttributeSet attrs) {
         super(context, attrs);
+			dr = context.getResources().getDrawable(R.drawable.bottom);
     }
 
     public LatinKeyboardView(Context context, AttributeSet attrs, int defStyle) {
@@ -60,7 +64,6 @@ public class LatinKeyboardView extends KeyboardView {
 
     void setSubtypeOnSpaceKey(final InputMethodSubtype subtype) {
         final LatinKeyboard keyboard = (LatinKeyboard)getKeyboard();
-        //keyboard.setSpaceIcon(getResources().getDrawable(subtype.getIconResId()));
         invalidateAllKeys();
     }
 @Override
@@ -68,12 +71,9 @@ public void onDraw(Canvas canvas) {
     super.onDraw(canvas);
 
     List<Key> keys = getKeyboard().getKeys();
-	//int[] arr ={32,9991,9995,33,63,9977,9979,9978,9975}; //unused atm
     for (Key key : keys) {            
     //Log.e("KEY", "Drawing key with code " + key.codes[0]);
-        //if (Arrays.asList(arr).contains((int)key.codes[0])) {
         if (key.codes[0] == 32) {
-            Drawable dr = (Drawable) getResources().getDrawable(R.drawable.bottom);
             dr.setBounds(key.x, key.y, key.x + key.width, key.y + key.height);
             dr.draw(canvas);
 
