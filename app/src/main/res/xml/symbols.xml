@@ -76,7 +76,7 @@
         -->
         <Key android:codes="32" android:keyIcon="@drawable/sym_keyboard_space" 
                 android:keyWidth="21%p" android:isRepeatable="true" android:horizontalGap="30%p"/>
-        <Key android:codes="-101" android:keyWidth="1%p" android:horizontalGap="1%p"/>
+        <Key android:codes="-101" android:keyWidth="0%p" android:horizontalGap="1%p"/>
         <Key android:codes="9991" android:keyWidth="7%p " android:keyLabel="meds"/>
         <Key android:codes="9995" android:keyWidth="12%p " android:keyLabel="heavies"/>
 		<Key android:codes="9989" android:keyWidth="7%p " android:keyLabel="tds"/>
