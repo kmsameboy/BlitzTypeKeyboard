@@ -3,7 +3,9 @@
     package="com.blackcj.customkeyboard">
 
     <application
-        android:label="@string/ime_name">
+		android:label="@string/ime_name"
+		android:icon="@mipmap/ic_launcher"
+		>
         <activity android:name=".ImePreferences" android:label="@string/settings_name">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
