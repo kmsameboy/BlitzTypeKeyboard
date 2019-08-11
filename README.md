@@ -22,3 +22,10 @@ https://github.com/vanous/BlitzTypeKeyboard/releases
 
 ![Screenshot](Screenshot_2017-01-01-00-24-15.png)
 ![Screenshot](Screenshot_2017-01-01-00-24-51.png)
+
+
+# Original project:
+
+All credits go to the original author:
+
+https://github.com/blackcj/AndroidCustomKeyboard

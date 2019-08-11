@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.blackcj.customkeyboard;
+package nodomain.vanous.customkeyboard;
 
 import android.content.Intent;
 import android.os.Bundle;

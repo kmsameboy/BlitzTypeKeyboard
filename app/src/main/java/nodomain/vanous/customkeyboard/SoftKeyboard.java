@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.blackcj.customkeyboard;
+package nodomain.vanous.customkeyboard;
 
 import android.app.Dialog;
 import android.content.Context;
@@ -59,7 +59,7 @@ public class SoftKeyboard extends InputMethodService
      * processing of hard keys in addition to regular text generation
      * from on-screen interaction.  It would be used for input methods that
      * perform language translations (such as converting text entered on 
-     * a QWERTY keyboard to Chinese), but may not be used for input methods
+     * a Qwertz keyboard to Chinese), but may not be used for input methods
      * that are primarily intended to be used for on-screen text entry.
      */
     static final boolean PROCESS_HARD_KEYS = true;
@@ -80,7 +80,7 @@ public class SoftKeyboard extends InputMethodService
     
     private LatinKeyboard mSymbolsKeyboard;
     private LatinKeyboard mSymbolsShiftedKeyboard;
-    private LatinKeyboard mQwertyKeyboard;
+    private LatinKeyboard mQwertzKeyboard;
     
     private LatinKeyboard mCurKeyboard;
     
@@ -109,7 +109,7 @@ public class SoftKeyboard extends InputMethodService
      * is called after creation and any configuration change.
      */
     @Override public void onInitializeInterface() {
-        if (mQwertyKeyboard != null) {
+        if (mQwertzKeyboard != null) {
             // Configuration changes can happen after the keyboard gets recreated,
             // so we need to be able to re-build the keyboards if the available
             // space has changed.
@@ -117,7 +117,7 @@ public class SoftKeyboard extends InputMethodService
             if (displayWidth == mLastDisplayWidth) return;
             mLastDisplayWidth = displayWidth;
         }
-        mQwertyKeyboard = new LatinKeyboard(this, R.xml.qwerty);
+        mQwertzKeyboard = new LatinKeyboard(this, R.xml.qwertz);
         mSymbolsKeyboard = new LatinKeyboard(this, R.xml.symbols);
         mSymbolsShiftedKeyboard = new LatinKeyboard(this, R.xml.symbols_shift);
     }
@@ -133,7 +133,7 @@ public class SoftKeyboard extends InputMethodService
                 R.layout.input, null);
         mInputView.setOnKeyboardActionListener(this);
         mInputView.setPreviewEnabled(false);
-        setLatinKeyboard(mQwertyKeyboard);
+        setLatinKeyboard(mQwertzKeyboard);
         return mInputView;
     }
 
@@ -198,7 +198,7 @@ public class SoftKeyboard extends InputMethodService
                 // normal alphabetic keyboard, and assume that we should
                 // be doing predictive text (showing candidates as the
                 // user types).
-                mCurKeyboard = mQwertyKeyboard;
+                mCurKeyboard = mQwertzKeyboard;
                 mPredictionOn = true;
                 
                 // We now look for a few special variations of text that will
@@ -238,7 +238,7 @@ public class SoftKeyboard extends InputMethodService
             default:
                 // For all unknown input types, default to the alphabetic
                 // keyboard with no special features.
-                mCurKeyboard = mQwertyKeyboard;
+                mCurKeyboard = mQwertzKeyboard;
                 updateShiftKeyState(attribute);
         }
         
@@ -264,7 +264,7 @@ public class SoftKeyboard extends InputMethodService
         // its window.
         setCandidatesViewShown(false);
         
-        mCurKeyboard = mQwertyKeyboard;
+        mCurKeyboard = mQwertzKeyboard;
         if (mInputView != null) {
             mInputView.closing();
         }
@@ -472,7 +472,7 @@ public class SoftKeyboard extends InputMethodService
      */
     private void updateShiftKeyState(EditorInfo attr) {
         if (attr != null 
-                && mInputView != null && mQwertyKeyboard == mInputView.getKeyboard()) {
+                && mInputView != null && mQwertzKeyboard == mInputView.getKeyboard()) {
             int caps = 0;
             EditorInfo ei = getCurrentInputEditorInfo();
             if (ei != null && ei.inputType != InputType.TYPE_NULL) {
@@ -548,7 +548,7 @@ public class SoftKeyboard extends InputMethodService
                 && mInputView != null) {
             Keyboard current = mInputView.getKeyboard();
             if (current == mSymbolsKeyboard || current == mSymbolsShiftedKeyboard) {
-                setLatinKeyboard(mQwertyKeyboard);
+                setLatinKeyboard(mQwertzKeyboard);
             } else {
                 setLatinKeyboard(mSymbolsKeyboard);
                 mSymbolsKeyboard.setShifted(false);
@@ -624,7 +624,7 @@ public class SoftKeyboard extends InputMethodService
         }
         
         Keyboard currentKeyboard = mInputView.getKeyboard();
-        if (mQwertyKeyboard == currentKeyboard) {
+        if (mQwertzKeyboard == currentKeyboard) {
             // Alphabet keyboard
             checkToggleCapsLock();
             mInputView.setShifted(mCapsLock || !mInputView.isShifted());
