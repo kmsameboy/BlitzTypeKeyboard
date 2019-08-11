@@ -4,21 +4,22 @@
 
 Android custom keyboard with special keys for the WOT Blitz game. QWERTZ layout. No shift (lowercase only). Custom buttons for most common commands.
 
-##Video:
+## Video:
 [![World of Tanks Blitz : Ep#6 T6 Dracula. Testing a new BlitzType Keyboard](Screenshot from 2017-01-01 12-45-52.png)](https://www.youtube.com/watch?v=KX7_eouTFoY "World of Tanks Blitz : Ep#6 T6 Dracula. Testing a new BlitzType Keyboard")
 
-##Forum
+## Forum
 
 http://forum.wotblitz.eu/index.php?/topic/36880-blitztype-keyboard-for-android/
 
-##Building
+## Building
 
-To build, just run gradle.
+To build, just run `./gradlew build`
 
-##Binary releases (apk download):
+## Binary releases (apk download):
+
 https://github.com/vanous/BlitzTypeKeyboard/releases
 
-##Obligatory screenshots:
+## Obligatory screenshots:
 
 ![Screenshot](Screenshot_2017-01-01-00-24-15.png)
 ![Screenshot](Screenshot_2017-01-01-00-24-51.png)
