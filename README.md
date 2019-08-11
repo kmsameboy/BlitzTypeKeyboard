@@ -5,7 +5,7 @@
 Android custom keyboard with special keys for the WOT Blitz game. QWERTZ layout. No shift (lowercase only). Custom buttons for most common commands.
 
 ## Video:
-[![BlitzType Keyboard](Screenshot_2017-01-01-00-24-15.png)](https://www.youtube.com/watch?v=KX7_eouTFoY)
+[![BlitzType Keyboard](Screenshot_from_2017-01-01_12-45-52.png)](https://www.youtube.com/watch?v=KX7_eouTFoY)
 
 ## Forum
 
