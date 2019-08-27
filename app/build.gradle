@@ -6,7 +6,7 @@ android {
     buildToolsVersion "28.0.3"
 
     defaultConfig {
-        applicationId "nodomain.vanous.customkeyboard"
+        applicationId "nodomain.vanous.blitztypekeyboard"
         minSdkVersion 19
         targetSdkVersion 23
         versionCode 4

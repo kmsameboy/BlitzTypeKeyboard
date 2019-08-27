@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package nodomain.vanous.customkeyboard;
+package nodomain.vanous.blitztypekeyboard;
 
 import android.content.Context;
 import android.graphics.Canvas;
