@@ -17,14 +17,12 @@
 package nodomain.vanous.blitztypekeyboard;
 
 import android.app.Dialog;
-import android.content.Context;
 import android.inputmethodservice.InputMethodService;
 import android.inputmethodservice.Keyboard;
 import android.inputmethodservice.KeyboardView;
 import android.os.IBinder;
 import android.text.InputType;
 import android.text.method.MetaKeyKeyListener;
-import android.util.Log;
 import android.view.KeyCharacterMap;
 import android.view.KeyEvent;
 import android.view.View;
@@ -34,11 +32,6 @@ import android.view.inputmethod.EditorInfo;
 import android.view.inputmethod.InputConnection;
 import android.view.inputmethod.InputMethodManager;
 import android.view.inputmethod.InputMethodSubtype;
-import android.view.textservice.SentenceSuggestionsInfo;
-import android.view.textservice.SpellCheckerSession;
-import android.view.textservice.SuggestionsInfo;
-import android.view.textservice.TextInfo;
-import android.view.textservice.TextServicesManager;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -51,7 +44,7 @@ import java.util.List;
  * be fleshed out as appropriate.
  */
 public class SoftKeyboard extends InputMethodService 
-        implements KeyboardView.OnKeyboardActionListener, SpellCheckerSession.SpellCheckerSessionListener {
+        implements KeyboardView.OnKeyboardActionListener {
     static final boolean DEBUG = false;
     
     /**
@@ -85,12 +78,7 @@ public class SoftKeyboard extends InputMethodService
     private LatinKeyboard mCurKeyboard;
     
     private String mWordSeparators;
-
-    private SpellCheckerSession mScs;
-    private List<String> mSuggestions;
-
-
-
+    
     /**
      * Main initialization of the input method component.  Be sure to call
      * to super class.
@@ -99,9 +87,6 @@ public class SoftKeyboard extends InputMethodService
         super.onCreate();
         mInputMethodManager = (InputMethodManager)getSystemService(INPUT_METHOD_SERVICE);
         mWordSeparators = getResources().getString(R.string.word_separators);
-        final TextServicesManager tsm = (TextServicesManager) getSystemService(
-                Context.TEXT_SERVICES_MANAGER_SERVICE);
-        mScs = tsm.newSpellCheckerSession(null, null, this, true);
     }
     
     /**
@@ -132,7 +117,6 @@ public class SoftKeyboard extends InputMethodService
         mInputView = (LatinKeyboardView) getLayoutInflater().inflate(
                 R.layout.input, null);
         mInputView.setOnKeyboardActionListener(this);
-        mInputView.setPreviewEnabled(false);
         setLatinKeyboard(mQwertzKeyboard);
         return mInputView;
     }
@@ -372,7 +356,6 @@ public class SoftKeyboard extends InputMethodService
      * continue to the app.
      */
     @Override public boolean onKeyDown(int keyCode, KeyEvent event) {
-
         switch (keyCode) {
             case KeyEvent.KEYCODE_BACK:
                 // The InputMethodService already takes care of the back
@@ -387,7 +370,6 @@ public class SoftKeyboard extends InputMethodService
                 break;
                 
             case KeyEvent.KEYCODE_DEL:
-
                 // Special handling of the delete key: if we currently are
                 // composing text for the user, we want to modify that instead
                 // of let the application to the delete itself.
@@ -400,11 +382,11 @@ public class SoftKeyboard extends InputMethodService
             case KeyEvent.KEYCODE_ENTER:
                 // Let the underlying text editor always handle these.
                 return false;
+                
             default:
                 // For all other keys, if we want to do transformations on
                 // text being entered with a hard keyboard, we need to process
                 // it and do the appropriate action.
-                /*
                 if (PROCESS_HARD_KEYS) {
                     if (keyCode == KeyEvent.KEYCODE_SPACE
                             && (event.getMetaState()&KeyEvent.META_ALT_ON) != 0) {
@@ -429,7 +411,7 @@ public class SoftKeyboard extends InputMethodService
                     if (mPredictionOn && translateKeyDown(keyCode, event)) {
                         return true;
                     }
-                }*/
+                }
         }
         
         return super.onKeyDown(keyCode, event);
@@ -450,7 +432,6 @@ public class SoftKeyboard extends InputMethodService
                         keyCode, event);
             }
         }
-
         
         return super.onKeyUp(keyCode, event);
     }
@@ -524,7 +505,6 @@ public class SoftKeyboard extends InputMethodService
     // Implementation of KeyboardViewListener
 
     public void onKey(int primaryCode, int[] keyCodes) {
-        Log.d("Test","KEYCODEy: " + primaryCode);
         if (isWordSeparator(primaryCode)) {
             // Handle separator
             if (mComposing.length() > 0) {
@@ -579,9 +559,7 @@ public class SoftKeyboard extends InputMethodService
         if (!mCompletionOn) {
             if (mComposing.length() > 0) {
                 ArrayList<String> list = new ArrayList<String>();
-                //list.add(mComposing.toString());
-                Log.d("SoftKeyboard", "REQUESTING: " + mComposing.toString());
-                mScs.getSentenceSuggestions(new TextInfo[] {new TextInfo(mComposing.toString())}, 5);
+                list.add(mComposing.toString());
                 setSuggestions(list, true, true);
             } else {
                 setSuggestions(null, false, false);
@@ -596,7 +574,6 @@ public class SoftKeyboard extends InputMethodService
         } else if (isExtractViewShown()) {
             setCandidatesViewShown(true);
         }
-        mSuggestions = suggestions;
         if (mCandidateView != null) {
             mCandidateView.setSuggestions(suggestions, completions, typedWordValid);
         }
@@ -640,70 +617,20 @@ public class SoftKeyboard extends InputMethodService
     }
     
     private void handleCharacter(int primaryCode, int[] keyCodes) {
-			Log.d("Test","KEYCODE 3: " + primaryCode);
-				char[] arr={};
-			switch(primaryCode){
-			
-				case 9999: arr = new char[] {'l','e','f','t',' '};
-						 break;
-				case 9998: arr = new char[] {'r','i','g','h','t',' '};
-						 break;
-				case 9997: arr = new char[] {'p','l','s',' '};
-						 break;
-				case 9996: arr = new char[] {'a','l','l',' '};
-						 break;
-				case 9995: arr = new char[] {'h','e','a','v','i','e','s',' '};
-						 break;
-				case 9994: arr = new char[] {'s','p','o','t',' '};
-						 break;
-				case 9993: arr = new char[] {'f','l','a','n','k',' '};
-						 break;
-				case 9992: arr = new char[] {'m','e',' '};
-						 break;
-				case 9991: arr = new char[] {'m','e','d','s',' '};
-						 break;
-				case 9990: arr = new char[] {'g','e','t',' '};
-						 break;
-				case 9989: arr = new char[] {'T','D','s',' '};
-						 break;
-				case 9988: arr = new char[] {'c','o','v','e','r',' '};
-						 break;
-				case 9987: arr = new char[] {'b','a','c','k',' '};
-						 break;
-				case 9986: arr = new char[] {'p','u','l','l',' '};
-						 break;
-				case 9985: arr = new char[] {'p','u','s','h',' '};
-						 break;
-				case 9984: arr = new char[] {'c','o','m','i','n','g',' '};
-						 break;
-				case 9983: arr = new char[] {'w','a','t','c','h',' '};
-						 break;
-				case 9982: arr = new char[] {'f','a','s','t',' '};
-						 break;
-				case 9981: arr = new char[] {'<','<','<','<',' '};
-						 break;
-				case 9980: arr = new char[] {'>','>','>','>',' '};
-						 break;
-				case 9979: arr = new char[] {'G','o','o','d',' ','G','a','m','e',' ','®',' '};
-						 break;
-				case 9978: arr = new char[] {'l','o','l',' ','®',' '};
-						 break;
-				case 9977: arr = new char[] {'o','m','g',' ','®',' '};
-						 break;
-				case 9976: arr = new char[] {'u','p',' '};
-						 break;
-				case 9975: arr = new char[] {'S','p','o','t','t','e','d',',',' ','h','e','l','p',' ','p','l','s','!'};
-						 break;
-				default: 
-
-						   arr=new char[]{' '};
-						   arr[0]=(char)primaryCode;
-						 
-			 break;
-
-			}
-		     getCurrentInputConnection().commitText(
-				String.valueOf(arr), 1);
+        if (isInputViewShown()) {
+            if (mInputView.isShifted()) {
+                primaryCode = Character.toUpperCase(primaryCode);
+            }
+        }
+        if (isAlphabet(primaryCode) && mPredictionOn) {
+            mComposing.append((char) primaryCode);
+            getCurrentInputConnection().setComposingText(mComposing, 1);
+            updateShiftKeyState(getCurrentInputEditorInfo());
+            updateCandidates();
+        } else {
+            getCurrentInputConnection().commitText(
+                    String.valueOf((char) primaryCode), 1);
+        }
     }
 
     private void handleClose() {
@@ -761,24 +688,20 @@ public class SoftKeyboard extends InputMethodService
             }
             updateShiftKeyState(getCurrentInputEditorInfo());
         } else if (mComposing.length() > 0) {
-
-            if (mPredictionOn && mSuggestions != null && index >= 0) {
-                mComposing.replace(0, mComposing.length(), mSuggestions.get(index));
-            }
+            // If we were generating candidate suggestions for the current
+            // text, we would commit one of them here.  But for this sample,
+            // we will just commit the current text.
             commitTyped(getCurrentInputConnection());
-
         }
     }
     
     public void swipeRight() {
-        Log.d("SoftKeyboard", "Swipe right");
-        if (mCompletionOn || mPredictionOn) {
+        if (mCompletionOn) {
             pickDefaultCandidate();
         }
     }
     
     public void swipeLeft() {
-        Log.d("SoftKeyboard", "Swipe left");
         handleBackspace();
     }
 
@@ -788,58 +711,10 @@ public class SoftKeyboard extends InputMethodService
 
     public void swipeUp() {
     }
-
+    
     public void onPress(int primaryCode) {
-
     }
-
+    
     public void onRelease(int primaryCode) {
-
-    }
-    /**
-     * http://www.tutorialspoint.com/android/android_spelling_checker.htm
-     * @param results results
-     */
-    @Override
-    public void onGetSuggestions(SuggestionsInfo[] results) {
-        final StringBuilder sb = new StringBuilder();
-
-        for (int i = 0; i < results.length; ++i) {
-            // Returned suggestions are contained in SuggestionsInfo
-            final int len = results[i].getSuggestionsCount();
-            sb.append('\n');
-
-            for (int j = 0; j < len; ++j) {
-                sb.append("," + results[i].getSuggestionAt(j));
-            }
-
-            sb.append(" (" + len + ")");
-        }
-        Log.d("SoftKeyboard", "SUGGESTIONS: " + sb.toString());
-    }
-    private static final int NOT_A_LENGTH = -1;
-
-    private void dumpSuggestionsInfoInternal(
-            final List<String> sb, final SuggestionsInfo si, final int length, final int offset) {
-        // Returned suggestions are contained in SuggestionsInfo
-        final int len = si.getSuggestionsCount();
-        for (int j = 0; j < len; ++j) {
-            sb.add(si.getSuggestionAt(j));
-        }
-    }
-
-    @Override
-    public void onGetSentenceSuggestions(SentenceSuggestionsInfo[] results) {
-        Log.d("SoftKeyboard", "onGetSentenceSuggestions");
-        final List<String> sb = new ArrayList<>();
-        for (int i = 0; i < results.length; ++i) {
-            final SentenceSuggestionsInfo ssi = results[i];
-            for (int j = 0; j < ssi.getSuggestionsCount(); ++j) {
-                dumpSuggestionsInfoInternal(
-                        sb, ssi.getSuggestionsInfoAt(j), ssi.getOffsetAt(j), ssi.getLengthAt(j));
-            }
-        }
-        Log.d("SoftKeyboard", "SUGGESTIONS: " + sb.toString());
-        setSuggestions(sb, true, true);
     }
 }
