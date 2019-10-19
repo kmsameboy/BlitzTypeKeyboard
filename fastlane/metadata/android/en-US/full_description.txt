@@ -1,8 +1,8 @@
-Android custom keyboard with special keys for the WOT Blitz game:
+Custom keyboard with special keys for the WOT Blitz game:
 
-- QWERTZ layout
+- QWERTZ US layout
 - No shift (lowercase only)
-- dedicated WG logo key
+- Dedicated WG logo key
 - Custom keys for most common commands
-- Commands like left/right/meds/heavies/push...
+- Special keys like left/right/meds/heavies/push...
 - No n00b or profanity

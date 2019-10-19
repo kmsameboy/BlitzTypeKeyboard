@@ -4,6 +4,8 @@
 
 Android custom keyboard with special keys for the WOT Blitz game. QWERTZ layout. No shift (lowercase only). Custom buttons for most common commands.
 
+<a href=https://f-droid.org/packages/nodomain.vanous.blitztypekeyboard/><img src="https://fdroid.gitlab.io/artwork/badge/get-it-on.png" height="75"></a>
+
 ## Video:
 [![BlitzType Keyboard](Screenshot_from_2017-01-01_12-45-52.png)](https://www.youtube.com/watch?v=KX7_eouTFoY)
 
@@ -17,7 +19,8 @@ To build, just run `./gradlew build`
 
 ## Binary releases (apk download):
 
-https://github.com/vanous/BlitzTypeKeyboard/releases
+<a href=https://f-droid.org/packages/nodomain.vanous.blitztypekeyboard/><img src="https://fdroid.gitlab.io/artwork/badge/get-it-on.png" height="75"></a>
+
 
 ## Obligatory screenshots:
 
@@ -48,3 +51,5 @@ BlitzTypeKeyboard
 
 All credits go to the original author:
 https://android.googlesource.com/platform/development/+/master/samples/SoftKeyboard
+
+Originally, project was forked from blackcj/AndroidCustomKeyboard , but i have since rebased it onto the original Android example code.

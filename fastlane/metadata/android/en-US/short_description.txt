@@ -1,1 +1,1 @@
-Android custom keyboard with special keys for the WOT Blitz game. Custom keys for most common commands.
+Custom keyboard with special keys for the WOT Blitz game.
